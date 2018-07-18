@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.game-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    height: 100vh;
+    text-align: center;
+}
+.rps-scores {
+    display: flex;
+    justify-content: space-between;
+}
+.rps-score {
+    font-weight: bold;
+    padding: .5em;
+    text-transform: capitalize;
+}
+.number {
+    font-size: 3em;
+}
+.rps-buttons {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.rps-button,
+.rps-reset-button {
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    flex: 0 1 100px;
+    font-size: 1.25em;
+    font-weight: bold;
+    letter-spacing: .12em;
+    line-height: 1.2;
+    margin: 10px;
+    padding: 1em 2em;
+    text-transform: uppercase;
+}
+.rps-reset-button {
+    font-size: 1em;
+}
+.rps-winner {
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: .12em;
+    line-height: 1.2;
+    padding-bottom: 1.5em; 
+    text-transform: uppercase;
+}
+.rps-winner.win {
+    color: green;
+}
+.rps-winner.lose {
+    color: red;
+}
